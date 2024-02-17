@@ -11,7 +11,7 @@ import SwiftUI
 struct CircleImage: View {
 
     var body: some View {
-        Text("Hello, World!")
+        Image(.turtlerock)
     }
 }
 
