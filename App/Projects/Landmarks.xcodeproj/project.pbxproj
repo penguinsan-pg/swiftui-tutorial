@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E432EAE2B8094D4006DDE95 /* LandmarksKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E432EAD2B8094D4006DDE95 /* LandmarksKit */; };
 		0EF8CF8D2B8092AC00CF3C3A /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8CF8C2B8092AC00CF3C3A /* LandmarksApp.swift */; };
-		0EF8CF8F2B8092AC00CF3C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8CF8E2B8092AC00CF3C3A /* ContentView.swift */; };
 		0EF8CF912B8092AE00CF3C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF8CF902B8092AE00CF3C3A /* Assets.xcassets */; };
 		0EF8CF942B8092AE00CF3C3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF8CF932B8092AE00CF3C3A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		0EF8CF892B8092AC00CF3C3A /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF8CF8C2B8092AC00CF3C3A /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
-		0EF8CF8E2B8092AC00CF3C3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EF8CF902B8092AE00CF3C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF8CF932B8092AE00CF3C3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				0EF8CF8C2B8092AC00CF3C3A /* LandmarksApp.swift */,
-				0EF8CF8E2B8092AC00CF3C3A /* ContentView.swift */,
 				0EF8CF902B8092AE00CF3C3A /* Assets.xcassets */,
 				0EF8CF922B8092AE00CF3C3A /* Preview Content */,
 			);
@@ -150,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF8CF8F2B8092AC00CF3C3A /* ContentView.swift in Sources */,
 				0EF8CF8D2B8092AC00CF3C3A /* LandmarksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
