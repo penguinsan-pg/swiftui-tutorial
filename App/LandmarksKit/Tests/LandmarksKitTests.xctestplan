@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C831BBE1-4BC5-4BDA-B320-85446858CCEA",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/LandmarksKit",
+        "identifier" : "LandmarksKitTests",
+        "name" : "LandmarksKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
