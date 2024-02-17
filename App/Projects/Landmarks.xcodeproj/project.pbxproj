@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E432EAE2B8094D4006DDE95 /* LandmarksKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E432EAD2B8094D4006DDE95 /* LandmarksKit */; };
 		0EF8CF8D2B8092AC00CF3C3A /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8CF8C2B8092AC00CF3C3A /* LandmarksApp.swift */; };
 		0EF8CF8F2B8092AC00CF3C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8CF8E2B8092AC00CF3C3A /* ContentView.swift */; };
 		0EF8CF912B8092AE00CF3C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF8CF902B8092AE00CF3C3A /* Assets.xcassets */; };
@@ -26,17 +27,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E432EAE2B8094D4006DDE95 /* LandmarksKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E432EAC2B8094D4006DDE95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0EF8CF802B8092AC00CF3C3A = {
 			isa = PBXGroup;
 			children = (
 				0EF8CF8B2B8092AC00CF3C3A /* Landmarks */,
 				0EF8CF8A2B8092AC00CF3C3A /* Products */,
+				0E432EAC2B8094D4006DDE95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = Landmarks;
+			packageProductDependencies = (
+				0E432EAD2B8094D4006DDE95 /* LandmarksKit */,
+			);
 			productName = Landmarks;
 			productReference = 0EF8CF892B8092AC00CF3C3A /* Landmarks.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E432EAD2B8094D4006DDE95 /* LandmarksKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LandmarksKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EF8CF812B8092AC00CF3C3A /* Project object */;
 }
