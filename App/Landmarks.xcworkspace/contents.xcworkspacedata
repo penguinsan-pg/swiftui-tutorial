@@ -4,4 +4,7 @@
    <FileRef
       location = "group:LandmarksKit">
    </FileRef>
+   <FileRef
+      location = "group:Projects/Landmarks.xcodeproj">
+   </FileRef>
 </Workspace>
