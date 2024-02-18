@@ -19,7 +19,7 @@ struct MapView: View {
     }
 
     var body: some View {
-        Text("Hello, World!")
+        Map(initialPosition: .region(region))
     }
 }
 
