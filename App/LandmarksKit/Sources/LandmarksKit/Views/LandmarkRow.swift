@@ -13,7 +13,9 @@ struct LandmarkRow: View {
     var landmark: Landmark
 
     var body: some View {
-        Text("Hello, World!")
+        HStack {
+            Text("Hello, World!")
+        }
     }
 }
 
