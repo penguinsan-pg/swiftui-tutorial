@@ -18,5 +18,5 @@ struct LandmarkRow: View {
 }
 
 #Preview {
-    LandmarkRow()
+    LandmarkRow(landmark: landmarks[0])
 }
