@@ -11,7 +11,10 @@ import SwiftUI
 struct LandmarkList: View {
 
     var body: some View {
-        Text("Hello, World!")
+        List {
+            LandmarkRow(landmark: landmarks[0])
+            LandmarkRow(landmark: landmarks[1])
+        }
     }
 }
 
