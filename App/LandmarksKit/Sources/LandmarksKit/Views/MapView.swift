@@ -15,7 +15,7 @@ struct MapView: View {
 
     private var region: MKCoordinateRegion {
         .init(
-            center: .init(latitude: 34.011_286, longitude: -116.166_868),
+            center: coordinate,
             span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)
         )
     }
