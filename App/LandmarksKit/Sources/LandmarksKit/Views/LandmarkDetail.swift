@@ -13,7 +13,7 @@ struct LandmarkDetail: View {
     var landmark: Landmark
 
     var body: some View {
-        VStack {
+        ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
 
