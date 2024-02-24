@@ -10,6 +10,8 @@ import SwiftUI
 
 struct LandmarkDetail: View {
 
+    var landmark: Landmark
+
     var body: some View {
         VStack {
             MapView()
@@ -44,5 +46,5 @@ struct LandmarkDetail: View {
 }
 
 #Preview {
-    LandmarkDetail()
+    LandmarkDetail(landmark: landmarks[0])
 }
