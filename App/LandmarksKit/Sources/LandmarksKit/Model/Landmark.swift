@@ -20,7 +20,7 @@ struct Landmark: Hashable, Codable {
 
     private var imageName: String
     var image: Image {
-        Image(imageName)
+        Image(ImageResource(name: imageName, bundle: Bundle.module))
     }
 
     private var coordinates: Coordinates
