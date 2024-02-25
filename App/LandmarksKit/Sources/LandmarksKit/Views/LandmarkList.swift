@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LandmarkList: View {
 
-    @State private var showFavoritesOnly = false
+    @State private var showFavoritesOnly = true
 
     var filteredLandmarks: [Landmark] {
         landmarks.filter { landmark in
