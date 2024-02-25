@@ -20,7 +20,7 @@ struct LandmarkList: View {
 
     var body: some View {
         NavigationSplitView {
-            List(landmarks) { landmark in
+            List(filteredLandmarks) { landmark in
                 NavigationLink {
                     LandmarkDetail(landmark: landmark)
                 } label: {
