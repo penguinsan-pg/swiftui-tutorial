@@ -10,6 +10,8 @@ import SwiftUI
 
 struct LandmarkList: View {
 
+    @State private var showFavoritesOnly = false
+
     var body: some View {
         NavigationSplitView {
             List(landmarks) { landmark in
