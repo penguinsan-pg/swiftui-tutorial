@@ -10,9 +10,12 @@ import SwiftUI
 
 public struct AppRootView: View {
 
+    @State private var modelData = ModelData()
+
     public init() {}
 
     public var body: some View {
         ContentView()
+            .environment(modelData)
     }
 }
