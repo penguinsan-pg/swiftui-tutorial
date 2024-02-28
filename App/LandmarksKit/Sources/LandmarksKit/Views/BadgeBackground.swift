@@ -17,7 +17,7 @@ struct BadgeBackground: View {
             path.move(
                 to: .init(
                     x: width * 0.95,
-                    y: height * 0.20
+                    y: height * (0.20 + HexagonParameters.adjustment)
                 )
             )
 
@@ -26,6 +26,17 @@ struct BadgeBackground: View {
                     to: .init(
                         x: width * segment.line.x,
                         y: height * segment.line.y
+                    )
+                )
+
+                path.addQuadCurve(
+                    to: .init(
+                        x: width * segment.curve.x,
+                        y: height * segment.curve.y
+                    ),
+                    control: .init(
+                        x: width * segment.control.x,
+                        y: height * segment.control.y
                     )
                 )
             }
