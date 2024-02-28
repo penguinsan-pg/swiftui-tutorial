@@ -15,4 +15,7 @@ struct HexagonParameters {
         let curve: CGPoint
         let control: CGPoint
     }
+
+    static let segments = [
+    ]
 }
