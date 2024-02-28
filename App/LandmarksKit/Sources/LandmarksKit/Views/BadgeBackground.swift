@@ -11,7 +11,9 @@ import SwiftUI
 struct BadgeBackground: View {
 
     var body: some View {
-        Text("Hello, World!")
+        Path { path in
+        }
+        .fill(.black)
     }
 }
 
