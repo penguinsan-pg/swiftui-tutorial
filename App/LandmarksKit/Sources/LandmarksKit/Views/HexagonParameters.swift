@@ -16,6 +16,8 @@ struct HexagonParameters {
         let control: CGPoint
     }
 
+    static let adjustment: CGFloat = 0.085
+
     static let segments = [
         Segment(
             line: .init(x: 0.60, y: 0.05),
@@ -23,14 +25,14 @@ struct HexagonParameters {
             control: .init(x: 0.50, y: 0.00)
         ),
         Segment(
-            line: .init(x: 0.05, y: 0.20),
-            curve: .init(x: 0.00, y: 0.30),
-            control: .init(x: 0.00, y: 0.25)
+            line: .init(x: 0.05, y: 0.20 + adjustment),
+            curve: .init(x: 0.00, y: 0.30 + adjustment),
+            control: .init(x: 0.00, y: 0.25 + adjustment)
         ),
         Segment(
-            line: .init(x: 0.00, y: 0.70),
-            curve: .init(x: 0.05, y: 0.80),
-            control: .init(x: 0.00, y: 0.75)
+            line: .init(x: 0.00, y: 0.70 - adjustment),
+            curve: .init(x: 0.05, y: 0.80 - adjustment),
+            control: .init(x: 0.00, y: 0.75 - adjustment)
         ),
         Segment(
             line: .init(x: 0.40, y: 0.95),
@@ -38,14 +40,14 @@ struct HexagonParameters {
             control: .init(x: 0.50, y: 1.00)
         ),
         Segment(
-            line: .init(x: 0.95, y: 0.80),
-            curve: .init(x: 1.00, y: 0.70),
-            control: .init(x: 1.00, y: 0.75)
+            line: .init(x: 0.95, y: 0.80 - adjustment),
+            curve: .init(x: 1.00, y: 0.70 - adjustment),
+            control: .init(x: 1.00, y: 0.75 - adjustment)
         ),
         Segment(
-            line: .init(x: 1.00, y: 0.30),
-            curve: .init(x: 0.95, y: 0.20),
-            control: .init(x: 1.00, y: 0.25)
+            line: .init(x: 1.00, y: 0.30 + adjustment),
+            curve: .init(x: 0.95, y: 0.20 + adjustment),
+            control: .init(x: 1.00, y: 0.25 + adjustment)
         ),
     ]
 }
