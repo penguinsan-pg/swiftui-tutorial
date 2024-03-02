@@ -11,7 +11,7 @@ import SwiftUI
 struct Badge: View {
 
     var body: some View {
-        Text("Hello, World!")
+        BadgeBackground()
     }
 }
 
