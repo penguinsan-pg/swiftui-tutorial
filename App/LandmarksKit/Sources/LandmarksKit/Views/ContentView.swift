@@ -18,7 +18,13 @@ struct ContentView: View {
     @State private var selection: Tab = .featured
 
     var body: some View {
-        LandmarkList()
+        TabView(selection: $selection) {
+            CategoryHome()
+                .tag(Tab.featured)
+
+            LandmarkList()
+                .tag(Tab.list)
+        }
     }
 }
 
