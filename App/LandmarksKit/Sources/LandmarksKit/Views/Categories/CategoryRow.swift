@@ -14,7 +14,8 @@ struct CategoryRow: View {
     var items: [Landmark]
 
     var body: some View {
-        Text("Hello, World!")
+        Text(categoryName)
+            .font(.headline)
     }
 }
 
