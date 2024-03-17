@@ -15,6 +15,8 @@ struct ContentView: View {
         case list
     }
 
+    @State private var selection: Tab = .featured
+
     var body: some View {
         LandmarkList()
     }
