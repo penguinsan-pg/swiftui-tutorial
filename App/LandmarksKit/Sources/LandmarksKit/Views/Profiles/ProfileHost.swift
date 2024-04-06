@@ -11,6 +11,7 @@ import SwiftUI
 struct ProfileHost: View {
 
     @Environment(\.editMode) var editMode
+    @Environment(ModelData.self) var modelData
     @State private var draftProfile = Profile.default
 
     var body: some View {
@@ -20,7 +21,7 @@ struct ProfileHost: View {
                 EditButton()
             }
 
-            ProfileSummary(profile: draftProfile)
+            ProfileSummary(profile: modelData.profile)
         }
         .padding()
     }
