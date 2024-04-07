@@ -11,6 +11,14 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
 
+    class Coordinator: NSObject {
+        var parent: PageViewController
+
+        init(_ pageViewController: PageViewController) {
+            parent = pageViewController
+        }
+    }
+
     var pages: [Page]
 
     func makeUIViewController(context: Context) -> UIPageViewController {
